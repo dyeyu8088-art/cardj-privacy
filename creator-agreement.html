@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CarDJ Creator Agreement</title>
+<style>
+body{margin:0;background:#f5f7fb;color:#1c2333;font:16px/1.7 -apple-system,"Segoe UI","Noto Sans SC","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+main{max-width:800px;margin:0 auto;padding:24px 20px 64px}
+h1{font-size:26px;margin:16px 0 4px}
+h2{font-size:19px;margin:32px 0 8px;padding-top:12px;border-top:1px solid #d6dceb}
+h3{font-size:17px;margin:20px 0 6px}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px}
+th,td{border:1px solid #d6dceb;padding:8px 10px;text-align:left;vertical-align:top}
+th{background:#e9edf6}
+blockquote{margin:12px 0;padding:10px 14px;background:#fff4e5;border-left:4px solid #ff6a2b;font-size:14px}
+a{color:#2e56c9;word-break:break-all}
+.lang{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0 16px}
+.lang a{padding:6px 12px;border-radius:999px;background:#e9edf6;text-decoration:none;color:#1c2333;font-size:14px}
+.lang a.on{background:#ff6a2b;color:#fff}
+.nav{font-size:14px;color:#5a6478;margin-top:40px;border-top:1px solid #d6dceb;padding-top:12px}
+section[hidden]{display:none}
+.btn{display:inline-block;margin-top:12px;padding:12px 18px;border-radius:12px;background:#ff6a2b;color:#fff;text-decoration:none;font-weight:600}
+</style>
+</head>
+<body>
+<main>
+<div class="lang"><a href="#zh" data-lang="zh" class="">中文</a><a href="#en" data-lang="en" class="on">English</a><a href="#ko" data-lang="ko" class="">한국어</a><a href="#vi" data-lang="vi" class="">Tiếng Việt</a></div>
+<section data-lang="zh" hidden><blockquote><strong>声明：本文件由产品团队起草，非律师意见，上线前需经法律审核。</strong></blockquote>
+<h1>CarDJ 创作者入驻协议</h1>
+<p>版本 1.0 · 草案日期 2026-10-09</p>
+<p>本协议是您（「创作者」）与 CarDJ 运营方（「平台」「我们」）之间关于作品上传、授权与收益分成的协议，是《用户协议》的补充。完成创作者入驻即表示您接受本协议；平台会记录您接受的协议版本号。</p>
+<h2>1. 定义</h2>
+<ul>
+<li><strong>作品</strong>：您上传到 CarDJ 的 DJ 混音、串烧、原创电音等音频文件及其标题、封面。</li>
+<li><strong>有效播放</strong>：已登录的听众对一首作品累计收听 ≥ 30 秒；同一听众对同一作品在 24 小时内只计 1 次有效播放。</li>
+<li><strong>加权播放</strong>：有效播放 × 质量系数。HQ 作品系数 1.0，SQ 作品系数 0.7。</li>
+<li><strong>月收入池</strong>：当月平台实际收到的广告收入与会员订阅收入（扣除 Google Play、广告平台等第三方费用后的净额）。打赏不进入收入池。</li>
+<li><strong>结算周期</strong>：自然月，按 UTC 时间计算。</li>
+</ul>
+<h2>2. 入驻条件</h2>
+<p>2.1 您须年满 18 周岁，具备完全民事行为能力。</p>
+<p>2.2 入驻时须提供：显示名、收款方式（PayPal 或 Payoneer）及对应收款账号。收款账号须为您本人所有。</p>
+<p>2.3 平台可基于作品质量、合规记录或其他合理原因拒绝入驻申请，或撤销已通过的入驻资格。</p>
+<p>2.4 您与平台之间是独立合作关系，不构成雇佣、合伙或代理。</p>
+<h2>3. 作品要求与音质检测</h2>
+<p>3.1 <strong>文件要求</strong>：WAV、FLAC、MP3（≥ 320 kbps）或 AAC（≥ 256 kbps）；采样率 ≥ 44.1 kHz；双声道；时长 ≥ 60 秒；单文件 ≤ 500 MB。</p>
+<p>3.2 <strong>自动检测</strong>。每个作品上传后都会经过自动音质检测，检测项与标准如下：</p>
+<table><thead><tr><th>检查项</th><th>通过</th><th>警告</th><th>不通过</th></tr></thead><tbody>
+<tr><td>格式码率</td><td>无损 / 320 kbps</td><td>256 kbps</td><td>&lt; 256 kbps，拒收</td></tr>
+<tr><td>频谱真实性</td><td>16 kHz 以上能量占比达标，且截止频率 ≥ 19 kHz</td><td>截止频率 17–19 kHz</td><td>截止频率 ≤ 16.5 kHz，判定为假高码率</td></tr>
+<tr><td>响度</td><td>-7 ~ -12 LUFS，真峰值 ≤ -0.5 dBTP</td><td>超出范围</td><td>真峰值 &gt; 0 dBTP，或削波段落 &gt; 1%</td></tr>
+<tr><td>动态范围</td><td>DR ≥ 7</td><td>DR 5–6</td><td>DR &lt; 5</td></tr>
+<tr><td>重复检测</td><td>指纹相似度 &lt; 70%</td><td>70–90%，进入人工审核</td><td>&gt; 90%，拒收并归属首个上传者</td></tr>
+</tbody></table>
+<p>3.3 <strong>分级</strong>。综合得分 0–100：</p>
+<ul>
+<li><strong>≥ 80 分：HQ</strong>（高音质认证）。可进入首页推荐，分成系数 1.0。</li>
+<li><strong>50–79 分：SQ</strong>（标准音质）。仅在您的作者页展示，分成系数 0.7。</li>
+<li><strong>&lt; 50 分：拒收</strong>。不发布，不计费。</li>
+</ul>
+<p>3.4 检测结果会在「我的作品」中以报告形式展示。被拒收或评为 SQ 的作品，您可以修改后重新上传。平台可能随技术改进调整检测算法，但分级阈值变更会提前通知。</p>
+<h2>4. 授权</h2>
+<p>4.1 您保留作品的全部著作权。</p>
+<p>4.2 您授予平台一项<strong>非独占、全球范围、免版税、可转授予平台服务商</strong>的许可，用于：存储、转码、流媒体播放、为会员提供离线缓存、在平台内推荐与展示、以及截取不超过 60 秒的片段用于平台宣传（含社交媒体与应用商店）。</p>
+<p>4.3 该许可在作品发布期间持续有效。作品下架后，许可终止，但以下情形除外：已缓存到会员设备的副本在缓存过期前继续有效；法律要求保留的副本；已经制作完成的宣传素材可继续使用至多 90 天。</p>
+<p>4.4 平台不会把您的作品授权给第三方商用，也不会单独出售您的作品。</p>
+<h2>5. 版权保证与赔偿</h2>
+<p>5.1 您保证并承诺：</p>
+<ul>
+<li>您对作品拥有完整权利，或已取得所有必要授权，包括作品中使用的任何采样、底层音乐、人声及封面图片；</li>
+<li>作品不侵犯任何第三方的著作权、商标权、肖像权或其他权利；</li>
+<li>作品不含违法内容，并符合《社区规范》；</li>
+<li>您提供的身份与收款信息真实、准确。</li>
+</ul>
+<p>5.2 平台不负责为您的作品取得任何第三方授权。</p>
+<p>5.3 <strong>赔偿</strong>。因您违反上述保证而导致平台遭受第三方索赔、诉讼、损失或费用（包括合理的律师费）的，您应负责抗辩并赔偿平台的全部损失。平台有权从您尚未结算的收益中扣留或抵扣相应金额。</p>
+<p>5.4 收到侵权投诉后，平台可立即下架相关作品，无须事先征得您同意；您可按《DMCA 投诉与反通知流程》提交反通知。</p>
+<h2>6. 收益分成</h2>
+<p>6.1 <strong>分成比例</strong>：平台将月收入池的 <strong>65%</strong> 分配给全体创作者，按各创作者加权播放占全平台加权播放的比例分配。</p>
+<blockquote>创作者月收益 = 月收入池 × 65% × （该创作者当月加权播放 ÷ 全平台当月加权播放）</blockquote>
+<p>6.2 <strong>打赏</strong>：听众通过 Google Play 对您作品的打赏，扣除 Google Play 费用后的净额 × 65% 直接归您，不进入收入池。</p>
+<p>6.3 <strong>计费口径</strong>：仅有效播放计入，具体标准见第 1 条。未登录听众的播放只记录事件，不计费。</p>
+<p>6.4 <strong>异常播放</strong>：对机器人、脚本、模拟器、互刷群等产生的播放，以及其他平台合理判断为异常的播放，平台有权不计费，并可追溯扣除。</p>
+<p>6.5 <strong>收益不保证</strong>。单次有效播放对应的金额随月收入池与全平台播放量波动，平台不保证任何最低收益、单价或收益增长。「当月预估」仅供参考，以月结结果为准。</p>
+<h2>7. 结算与提现</h2>
+<p>7.1 <strong>月结</strong>：每月 1 日（UTC）对上一自然月进行结算，生成 Payout 记录，包含毛收入、分成金额、上月滚存、本期应付金额与状态。</p>
+<p>7.2 <strong>起付金额</strong>：单期应付金额 <strong>≥ 20 美元</strong>方可打款；不足 20 美元的，自动滚存至下月累计。</p>
+<p>7.3 <strong>打款方式</strong>：通过 PayPal Payouts 或 Payoneer Mass Payout 打款，币种为美元。PayPal、Payoneer 或您的银行收取的手续费、汇兑费用由您承担。</p>
+<p>7.4 <strong>收款账号</strong>：结算前须绑定有效的收款账号。未绑定或账号无效的，Payout 状态为「暂扣」，最长保留 12 个月；超期仍未完成绑定的，平台可视为您放弃该笔收益。</p>
+<p>7.5 <strong>暂扣与追回</strong>：若平台发现刷量、侵权投诉或其他违规，可将相关 Payout 置为「暂扣」，待调查结束后支付、部分支付或取消。已支付但事后查实为违规所得的，平台有权要求返还或从后续收益中抵扣。</p>
+<p>7.6 <strong>税务</strong>：您应自行申报并缴纳所在地的税费。平台可能依法要求您提供税务信息，或依法代扣代缴。</p>
+<p>7.7 <strong>争议</strong>：对 Payout 金额有异议的，请在收到 Payout 通知后 30 天内通过 creator@cardj.app 提出；逾期视为确认。</p>
+<p>7.8 平台上线初期，打款功能可能分阶段开放。在打款功能开放前，已生成的 Payout 会累计保留，开放后按本协议支付。</p>
+<h2>8. 禁止行为</h2>
+<p>您不得：</p>
+<ul>
+<li>以任何方式刷播放量、刷收藏或刷榜；</li>
+<li>上传假高码率文件（低码率转封装为无损或 320 kbps）；</li>
+<li>重复上传同一作品或他人作品；</li>
+<li>在作品、标题、封面或简介中引导听众到 Google Play 以外的渠道付费；</li>
+<li>违反《用户协议》或《社区规范》。</li>
+</ul>
+<h2>9. 下架与封号</h2>
+<p>9.1 <strong>您可以</strong>随时在「我的作品」中下架自己的作品。</p>
+<p>9.2 <strong>平台可以</strong>在以下情况下架作品：收到侵权投诉；违反《社区规范》；音质检测判定为假高码率；重复检测判定为重复；其他合理理由。</p>
+<p>9.3 <strong>封号</strong>。出现以下情况之一，平台可终止您的创作者资格并封禁账号：</p>
+<ul>
+<li>12 个月内收到 3 次有效侵权投诉且无成功反通知；</li>
+<li>刷量或其他严重作弊；</li>
+<li>严重或多次违反本协议。</li>
+</ul>
+<p>9.4 封号后：无争议且已达起付金额的收益，按第 7 条支付；涉及侵权或作弊的收益不予支付；您的作品从平台下架。</p>
+<h2>10. 协议变更与终止</h2>
+<p>10.1 平台可更新本协议，包括分成规则与检测标准。涉及分成比例、起付金额或计费口径的变更，至少提前 30 天通知；其他变更至少提前 7 天通知。变更生效后您继续上传或保留作品，即视为接受。</p>
+<p>10.2 您可随时下架全部作品并申请退出创作者计划；退出后，已结算或待结算的收益按第 7 条处理。</p>
+<h2>11. 其他</h2>
+<p>11.1 本协议与《用户协议》冲突的，就创作者事项以本协议为准。</p>
+<p>11.2 适用法律与争议解决条款与《用户协议》一致。</p>
+<h2>12. 联系</h2>
+<p>创作者事务：creator@cardj.app</p></section>
+<section data-lang="en" hidden><blockquote><strong>Notice: This document was drafted by the product team. It is not legal advice and must be reviewed by legal counsel before launch.</strong></blockquote>
+<h1>CarDJ Creator Agreement</h1>
+<p>Version 1.0 · Draft dated 2026-10-09</p>
+<p>This Agreement between you ("the Creator") and the operator of CarDJ ("the Platform", "we") governs uploads, licensing, and revenue sharing. It supplements the Terms of Service. By completing creator onboarding you accept this Agreement; the Platform records the version you accepted.</p>
+<h2>1. Definitions</h2>
+<ul>
+<li><strong>Track</strong>: an audio file you upload to CarDJ (DJ mix, megamix, original electronic music, and so on), together with its title and cover art.</li>
+<li><strong>Qualified play</strong>: a signed-in listener plays a track for a cumulative 30 seconds or more. The same listener playing the same track counts at most once in any 24-hour period.</li>
+<li><strong>Weighted play</strong>: qualified plays × quality factor. HQ tracks carry a factor of 1.0; SQ tracks carry 0.7.</li>
+<li><strong>Monthly revenue pool</strong>: advertising and subscription revenue actually received by the Platform in a month, net of Google Play, ad-network, and other third-party fees. Tips are not part of the pool.</li>
+<li><strong>Settlement period</strong>: a calendar month, measured in UTC.</li>
+</ul>
+<h2>2. Eligibility</h2>
+<p>2.1 You must be at least 18 years old and have full legal capacity.</p>
+<p>2.2 At onboarding you provide a display name, a payout method (PayPal or Payoneer), and the matching payout account. The payout account must belong to you.</p>
+<p>2.3 The Platform may decline an application, or revoke creator status, on grounds of content quality, compliance history, or other reasonable cause.</p>
+<p>2.4 You and the Platform are independent parties. Nothing in this Agreement creates employment, partnership, or agency.</p>
+<h2>3. Track requirements and audio-quality checks</h2>
+<p>3.1 <strong>File requirements</strong>: WAV, FLAC, MP3 (≥ 320 kbps), or AAC (≥ 256 kbps); sample rate ≥ 44.1 kHz; stereo; duration ≥ 60 seconds; single file ≤ 500 MB.</p>
+<p>3.2 <strong>Automated checks</strong>. Every upload runs through automated quality analysis against these criteria:</p>
+<table><thead><tr><th>Check</th><th>Pass</th><th>Warning</th><th>Fail</th></tr></thead><tbody>
+<tr><td>Format and bitrate</td><td>Lossless / 320 kbps</td><td>256 kbps</td><td>&lt; 256 kbps, rejected</td></tr>
+<tr><td>Spectral authenticity</td><td>Enough energy above 16 kHz and cutoff ≥ 19 kHz</td><td>Cutoff 17–19 kHz</td><td>Cutoff ≤ 16.5 kHz, treated as fake high bitrate</td></tr>
+<tr><td>Loudness</td><td>-7 to -12 LUFS, true peak ≤ -0.5 dBTP</td><td>Out of range</td><td>True peak &gt; 0 dBTP, or clipped sections &gt; 1%</td></tr>
+<tr><td>Dynamic range</td><td>DR ≥ 7</td><td>DR 5–6</td><td>DR &lt; 5</td></tr>
+<tr><td>Duplicate detection</td><td>Fingerprint similarity &lt; 70%</td><td>70–90%, sent to manual review</td><td>&gt; 90%, rejected and credited to the first uploader</td></tr>
+</tbody></table>
+<p>3.3 <strong>Grading</strong>. Overall score 0–100:</p>
+<ul>
+<li><strong>80 or above: HQ</strong> (high-quality certified). Eligible for home-page recommendation; revenue factor 1.0.</li>
+<li><strong>50–79: SQ</strong> (standard quality). Shown only on your creator page; revenue factor 0.7.</li>
+<li><strong>Below 50: rejected.</strong> Not published, not credited.</li>
+</ul>
+<p>3.4 The report is shown under My Tracks. You may fix and re-upload a track that was rejected or graded SQ. The Platform may refine the analysis as technology improves; changes to the grading thresholds will be announced in advance.</p>
+<h2>4. Licence</h2>
+<p>4.1 You keep full copyright in your tracks.</p>
+<p>4.2 You grant the Platform a <strong>non-exclusive, worldwide, royalty-free licence, sublicensable to the Platform's service providers</strong>, to: store, transcode, and stream the track; provide offline caching to members; recommend and display it within the Platform; and use excerpts of up to 60 seconds to promote the Platform (including on social media and app stores).</p>
+<p>4.3 The licence lasts while the track is published. When a track is taken down the licence ends, except that: copies already cached on members' devices remain until the cache expires; copies the law requires us to keep are retained; and promotional material already produced may be used for up to 90 more days.</p>
+<p>4.4 The Platform will not license your tracks to third parties for commercial use, nor sell your tracks on their own.</p>
+<h2>5. Copyright warranties and indemnity</h2>
+<p>5.1 You warrant and undertake that:</p>
+<ul>
+<li>you own all rights in the track or have obtained every necessary licence, including for any samples, underlying music, vocals, and cover art;</li>
+<li>the track does not infringe any third party's copyright, trademark, publicity, or other rights;</li>
+<li>the track contains nothing unlawful and complies with the Community Guidelines;</li>
+<li>the identity and payout details you provide are true and accurate.</li>
+</ul>
+<p>5.2 The Platform does not obtain third-party licences on your behalf.</p>
+<p>5.3 <strong>Indemnity.</strong> If a breach of these warranties leads to any third-party claim, lawsuit, loss, or expense for the Platform (including reasonable legal fees), you will defend the Platform and compensate it in full. The Platform may withhold or set off the corresponding amount from your unpaid earnings.</p>
+<p>5.4 On receiving an infringement complaint the Platform may take the track down immediately without your prior consent. You may file a counter-notice under the DMCA Notice and Counter-Notice Procedure.</p>
+<h2>6. Revenue share</h2>
+<p>6.1 <strong>Share.</strong> The Platform distributes <strong>65%</strong> of the monthly revenue pool to creators, in proportion to each creator's weighted plays over total weighted plays across the Platform.</p>
+<blockquote>Creator monthly earnings = monthly revenue pool × 65% × (creator's weighted plays that month ÷ Platform-wide weighted plays that month)</blockquote>
+<p>6.2 <strong>Tips.</strong> When a listener tips your track through Google Play, 65% of the net amount after Google Play fees goes directly to you. Tips do not enter the pool.</p>
+<p>6.3 <strong>What counts.</strong> Only qualified plays, as defined in Section 1. Plays by signed-out listeners are logged as events but not credited.</p>
+<p>6.4 <strong>Abnormal plays.</strong> The Platform may refuse to credit, and may retroactively deduct, plays generated by bots, scripts, emulators, play-exchange groups, or anything else the Platform reasonably judges to be abnormal.</p>
+<p>6.5 <strong>No guaranteed earnings.</strong> The value of a qualified play varies with the monthly revenue pool and Platform-wide play volume. The Platform guarantees no minimum earnings, per-play rate, or growth. The "current month estimate" is indicative only; the monthly settlement is final.</p>
+<h2>7. Settlement and payouts</h2>
+<p>7.1 <strong>Monthly settlement.</strong> On the 1st of each month (UTC) the previous calendar month is settled and a Payout record is created, showing gross revenue, your share, carry-over from the previous month, the amount payable, and status.</p>
+<p>7.2 <strong>Minimum payout.</strong> Payment is made when the amount payable for a period is <strong>US$20 or more</strong>. Amounts below US$20 are carried over and accumulated into the following month.</p>
+<p>7.3 <strong>Payment method.</strong> Payouts are sent through PayPal Payouts or Payoneer Mass Payout, in US dollars. Fees and currency-conversion charges levied by PayPal, Payoneer, or your bank are borne by you.</p>
+<p>7.4 <strong>Payout account.</strong> A valid payout account must be linked before settlement. If none is linked, or the account is invalid, the Payout is held for up to 12 months. If the account is still not linked after that, the Platform may treat the amount as waived.</p>
+<p>7.5 <strong>Holds and clawbacks.</strong> If the Platform detects play fraud, an infringement complaint, or another breach, it may place the related Payout on hold and, after investigation, pay it in full, in part, or cancel it. Where an amount already paid is later found to come from a breach, the Platform may demand repayment or set it off against future earnings.</p>
+<p>7.6 <strong>Tax.</strong> You are responsible for declaring and paying taxes where you live. The Platform may request tax information or withhold tax where the law requires.</p>
+<p>7.7 <strong>Disputes.</strong> Questions about a Payout amount must be raised within 30 days of the Payout notification by emailing creator@cardj.app; otherwise the amount is deemed accepted.</p>
+<p>7.8 During the initial launch period, payout functionality may be rolled out in stages. Payout records created before payouts are enabled are retained and paid under this Agreement once payouts open.</p>
+<h2>8. Prohibited conduct</h2>
+<p>You must not:</p>
+<ul>
+<li>inflate plays, favourites, or rankings by any means;</li>
+<li>upload fake high-bitrate files (low-bitrate audio re-wrapped as lossless or 320 kbps);</li>
+<li>re-upload the same track, or upload another person's track;</li>
+<li>steer listeners to pay through any channel other than Google Play, whether in the track, title, cover art, or description;</li>
+<li>breach the Terms of Service or the Community Guidelines.</li>
+</ul>
+<h2>9. Takedown and termination</h2>
+<p>9.1 <strong>You may</strong> take down your own tracks at any time under My Tracks.</p>
+<p>9.2 <strong>The Platform may</strong> take a track down when: an infringement complaint is received; the Community Guidelines are breached; quality analysis finds a fake high bitrate; duplicate detection flags it as a duplicate; or for other reasonable cause.</p>
+<p>9.3 <strong>Account termination.</strong> The Platform may end your creator status and ban your account if:</p>
+<ul>
+<li>you receive 3 valid infringement complaints within 12 months with no successful counter-notice;</li>
+<li>you engage in play fraud or other serious cheating;</li>
+<li>you seriously or repeatedly breach this Agreement.</li>
+</ul>
+<p>9.4 After termination: undisputed earnings that meet the minimum payout are paid under Section 7; earnings tied to infringement or fraud are not paid; your tracks are removed from the Platform.</p>
+<h2>10. Changes and exit</h2>
+<p>10.1 The Platform may update this Agreement, including the revenue rules and quality criteria. Changes to the share percentage, minimum payout, or what counts as a qualified play are announced at least 30 days in advance; other changes at least 7 days in advance. Continuing to upload or keep tracks published after a change takes effect means you accept it.</p>
+<p>10.2 You may take down all your tracks and leave the creator programme at any time. Settled and pending earnings are then handled under Section 7.</p>
+<h2>11. Miscellaneous</h2>
+<p>11.1 Where this Agreement conflicts with the Terms of Service on creator matters, this Agreement prevails.</p>
+<p>11.2 Governing law and dispute resolution follow the Terms of Service.</p>
+<h2>12. Contact</h2>
+<p>Creator matters: creator@cardj.app</p></section>
+<section data-lang="ko" hidden><blockquote><strong>안내: 이 문서는 제품팀이 작성한 초안으로, 변호사의 법률 의견이 아닙니다. 출시 전 반드시 법률 검토를 받아야 합니다.</strong></blockquote>
+<h1>CarDJ 크리에이터 계약</h1>
+<p>버전 1.0 · 초안 작성일 2026-10-09</p>
+<p>본 계약은 귀하("크리에이터")와 CarDJ 운영자("플랫폼" 또는 "회사") 사이의 작품 업로드, 이용 허락, 수익 배분에 관한 약정이며 이용약관을 보충합니다. 크리에이터 입점을 완료하면 본 계약에 동의한 것으로 보며, 회사는 귀하가 동의한 계약 버전을 기록합니다.</p>
+<h2>1. 용어 정의</h2>
+<ul>
+<li><strong>작품</strong>: 귀하가 CarDJ에 업로드한 DJ 믹스, 메가믹스, 창작 일렉트로닉 음악 등의 오디오 파일과 그 제목·커버.</li>
+<li><strong>유효 재생</strong>: 로그인한 리스너가 한 작품을 누적 30초 이상 재생한 경우. 같은 리스너가 같은 작품을 24시간 안에 여러 번 들어도 1회만 인정합니다.</li>
+<li><strong>가중 재생</strong>: 유효 재생 × 품질 계수. HQ 작품은 1.0, SQ 작품은 0.7.</li>
+<li><strong>월 수익 풀</strong>: 해당 월에 플랫폼이 실제로 받은 광고 수익과 멤버십 구독 수익에서 Google Play, 광고 네트워크 등 제3자 수수료를 뺀 순액. 후원은 풀에 포함되지 않습니다.</li>
+<li><strong>정산 기간</strong>: UTC 기준 달력상의 한 달.</li>
+</ul>
+<h2>2. 입점 조건</h2>
+<p>2.1 만 18세 이상의 완전한 행위능력자여야 합니다.</p>
+<p>2.2 입점 시 표시 이름, 수취 방법(PayPal 또는 Payoneer), 해당 수취 계정을 제공해야 하며, 수취 계정은 본인 명의여야 합니다.</p>
+<p>2.3 회사는 작품 품질, 규정 준수 이력 또는 그 밖의 합리적인 사유로 입점 신청을 거절하거나 이미 승인된 자격을 취소할 수 있습니다.</p>
+<p>2.4 귀하와 회사는 독립적인 협력 관계이며, 고용·조합·대리 관계가 아닙니다.</p>
+<h2>3. 작품 요건과 음질 검사</h2>
+<p>3.1 <strong>파일 요건</strong>: WAV, FLAC, MP3(320 kbps 이상) 또는 AAC(256 kbps 이상); 샘플레이트 44.1 kHz 이상; 스테레오; 길이 60초 이상; 파일 하나당 500 MB 이하.</p>
+<p>3.2 <strong>자동 검사</strong>. 모든 작품은 업로드 후 아래 기준으로 자동 음질 검사를 거칩니다.</p>
+<table><thead><tr><th>검사 항목</th><th>통과</th><th>경고</th><th>불합격</th></tr></thead><tbody>
+<tr><td>포맷·비트레이트</td><td>무손실 / 320 kbps</td><td>256 kbps</td><td>256 kbps 미만, 거부</td></tr>
+<tr><td>스펙트럼 진위</td><td>16 kHz 이상 에너지 비율 충족, 컷오프 19 kHz 이상</td><td>컷오프 17–19 kHz</td><td>컷오프 16.5 kHz 이하, 가짜 고음질로 판정</td></tr>
+<tr><td>라우드니스</td><td>-7 ~ -12 LUFS, 트루 피크 -0.5 dBTP 이하</td><td>범위 벗어남</td><td>트루 피크 0 dBTP 초과, 또는 클리핑 구간 1% 초과</td></tr>
+<tr><td>다이내믹 레인지</td><td>DR 7 이상</td><td>DR 5–6</td><td>DR 5 미만</td></tr>
+<tr><td>중복 검사</td><td>핑거프린트 유사도 70% 미만</td><td>70–90%, 수동 심사</td><td>90% 초과, 거부 및 최초 업로더에게 귀속</td></tr>
+</tbody></table>
+<p>3.3 <strong>등급</strong>. 종합 점수 0–100:</p>
+<ul>
+<li><strong>80점 이상: HQ</strong>(고음질 인증). 홈 추천 대상, 수익 계수 1.0.</li>
+<li><strong>50–79점: SQ</strong>(표준 음질). 크리에이터 페이지에만 노출, 수익 계수 0.7.</li>
+<li><strong>50점 미만: 거부.</strong> 게시되지 않으며 수익도 발생하지 않습니다.</li>
+</ul>
+<p>3.4 검사 결과는 "내 작품"에서 리포트로 확인할 수 있습니다. 거부되거나 SQ로 평가된 작품은 수정 후 다시 업로드할 수 있습니다. 회사는 기술 발전에 따라 검사 알고리즘을 개선할 수 있으며, 등급 기준이 바뀔 때는 사전에 알립니다.</p>
+<h2>4. 이용 허락</h2>
+<p>4.1 작품의 저작권은 전부 귀하에게 있습니다.</p>
+<p>4.2 귀하는 회사에 다음 용도로 <strong>비독점적, 전 세계적, 무상, 플랫폼 서비스 제공자에게 재허락 가능한</strong> 이용 허락을 부여합니다: 저장, 트랜스코딩, 스트리밍 재생, 멤버십 회원을 위한 오프라인 저장, 플랫폼 안에서의 추천과 노출, 그리고 60초 이내의 발췌를 플랫폼 홍보(소셜 미디어와 앱 스토어 포함)에 사용하는 것.</p>
+<p>4.3 이용 허락은 작품이 게시된 동안 유효합니다. 작품을 내리면 이용 허락은 종료되지만 다음은 예외입니다: 회원 기기에 이미 저장된 사본은 캐시가 만료될 때까지 유지됨; 법령상 보관해야 하는 사본; 이미 제작된 홍보 자료는 최대 90일 동안 계속 사용 가능.</p>
+<p>4.4 회사는 귀하의 작품을 제3자에게 상업적으로 재허락하거나 단독으로 판매하지 않습니다.</p>
+<h2>5. 저작권 보증과 배상</h2>
+<p>5.1 귀하는 다음을 보증하고 약속합니다.</p>
+<ul>
+<li>작품에 대한 모든 권리를 보유하거나, 샘플·원곡·보컬·커버 이미지를 포함해 필요한 모든 허락을 받았음;</li>
+<li>작품이 제3자의 저작권, 상표권, 초상권 등 어떤 권리도 침해하지 않음;</li>
+<li>작품에 불법 내용이 없고 커뮤니티 가이드라인을 준수함;</li>
+<li>제공한 신원 및 수취 정보가 진실하고 정확함.</li>
+</ul>
+<p>5.2 회사는 귀하를 대신해 제3자 허락을 받아 주지 않습니다.</p>
+<p>5.3 <strong>배상</strong>. 위 보증 위반으로 회사가 제3자의 청구, 소송, 손실 또는 비용(합리적인 변호사 비용 포함)을 입으면, 귀하는 회사를 방어하고 모든 손실을 배상해야 합니다. 회사는 귀하의 미정산 수익에서 해당 금액을 보류하거나 상계할 수 있습니다.</p>
+<p>5.4 침해 신고를 받으면 회사는 귀하의 사전 동의 없이 해당 작품을 즉시 내릴 수 있습니다. 귀하는 DMCA 신고 및 이의제기 절차에 따라 이의제기를 할 수 있습니다.</p>
+<h2>6. 수익 배분</h2>
+<p>6.1 <strong>배분 비율</strong>: 회사는 월 수익 풀의 <strong>65%</strong>를 전체 크리에이터에게 배분하며, 각 크리에이터의 가중 재생이 플랫폼 전체 가중 재생에서 차지하는 비율에 따라 나눕니다.</p>
+<blockquote>크리에이터 월 수익 = 월 수익 풀 × 65% × (해당 크리에이터의 당월 가중 재생 ÷ 플랫폼 전체 당월 가중 재생)</blockquote>
+<p>6.2 <strong>후원</strong>: 리스너가 Google Play를 통해 귀하의 작품에 후원하면, Google Play 수수료를 뺀 순액의 65%가 귀하에게 직접 돌아갑니다. 후원은 풀에 들어가지 않습니다.</p>
+<p>6.3 <strong>집계 기준</strong>: 제1조에 정의된 유효 재생만 집계합니다. 로그인하지 않은 리스너의 재생은 이벤트로만 기록되고 수익에 반영되지 않습니다.</p>
+<p>6.4 <strong>비정상 재생</strong>: 봇, 스크립트, 에뮬레이터, 품앗이 그룹 등으로 발생한 재생과 회사가 합리적으로 비정상이라고 판단한 재생은 집계하지 않으며, 소급해 차감할 수 있습니다.</p>
+<p>6.5 <strong>수익 보장 없음</strong>. 유효 재생 1회의 가치는 월 수익 풀과 플랫폼 전체 재생량에 따라 달라집니다. 회사는 최소 수익, 재생당 단가, 수익 증가를 보장하지 않습니다. "이번 달 예상"은 참고용이며 월 정산 결과가 최종입니다.</p>
+<h2>7. 정산과 지급</h2>
+<p>7.1 <strong>월 정산</strong>: 매월 1일(UTC) 전월분을 정산하고, 총수익, 배분액, 전월 이월액, 당기 지급액, 상태가 적힌 Payout 기록을 생성합니다.</p>
+<p>7.2 <strong>최소 지급액</strong>: 당기 지급액이 <strong>20달러 이상</strong>이어야 지급합니다. 20달러 미만이면 자동으로 다음 달로 이월해 누적합니다.</p>
+<p>7.3 <strong>지급 방법</strong>: PayPal Payouts 또는 Payoneer Mass Payout으로 미국 달러로 지급합니다. PayPal, Payoneer 또는 귀하의 은행이 부과하는 수수료와 환전 비용은 귀하가 부담합니다.</p>
+<p>7.4 <strong>수취 계정</strong>: 정산 전에 유효한 수취 계정을 연결해야 합니다. 연결되지 않았거나 계정이 유효하지 않으면 Payout은 "보류" 상태로 최대 12개월 보관되며, 그 후에도 연결하지 않으면 회사는 해당 금액을 포기한 것으로 볼 수 있습니다.</p>
+<p>7.5 <strong>보류와 환수</strong>: 어뷰징, 침해 신고 또는 기타 위반이 발견되면 회사는 관련 Payout을 "보류"로 두고 조사 후 전액 지급, 일부 지급 또는 취소할 수 있습니다. 이미 지급된 금액이 나중에 위반으로 얻은 것으로 확인되면 반환을 요구하거나 이후 수익에서 상계할 수 있습니다.</p>
+<p>7.6 <strong>세금</strong>: 거주 지역의 세금 신고와 납부는 귀하의 책임입니다. 회사는 법령에 따라 세무 정보를 요청하거나 원천징수할 수 있습니다.</p>
+<p>7.7 <strong>이의 제기</strong>: Payout 금액에 이의가 있으면 Payout 알림을 받은 날로부터 30일 안에 creator@cardj.app으로 알려 주세요. 기한이 지나면 확정된 것으로 봅니다.</p>
+<p>7.8 서비스 초기에는 지급 기능이 단계적으로 열릴 수 있습니다. 지급 기능이 열리기 전에 생성된 Payout은 보관되며, 기능이 열리면 본 계약에 따라 지급합니다.</p>
+<h2>8. 금지 행위</h2>
+<p>귀하는 다음을 해서는 안 됩니다.</p>
+<ul>
+<li>어떤 방법으로든 재생 수, 좋아요, 순위를 부풀리는 행위;</li>
+<li>가짜 고음질 파일(저음질 오디오를 무손실이나 320 kbps로 다시 포장한 것)을 업로드하는 행위;</li>
+<li>같은 작품을 반복 업로드하거나 타인의 작품을 업로드하는 행위;</li>
+<li>작품, 제목, 커버, 설명에서 리스너를 Google Play 외의 결제 경로로 유도하는 행위;</li>
+<li>이용약관이나 커뮤니티 가이드라인을 위반하는 행위.</li>
+</ul>
+<h2>9. 삭제와 계정 정지</h2>
+<p>9.1 <strong>귀하는</strong> 언제든 "내 작품"에서 자신의 작품을 내릴 수 있습니다.</p>
+<p>9.2 <strong>회사는</strong> 다음의 경우 작품을 내릴 수 있습니다: 침해 신고 접수; 커뮤니티 가이드라인 위반; 음질 검사에서 가짜 고음질로 판정; 중복 검사에서 중복으로 판정; 그 밖의 합리적인 사유.</p>
+<p>9.3 <strong>계정 정지</strong>. 다음 중 하나에 해당하면 회사는 크리에이터 자격을 종료하고 계정을 정지할 수 있습니다.</p>
+<ul>
+<li>12개월 안에 유효한 침해 신고를 3회 받고 이의제기가 성공한 적이 없는 경우;</li>
+<li>어뷰징 또는 그 밖의 중대한 부정행위;</li>
+<li>본 계약의 중대한 또는 반복적인 위반.</li>
+</ul>
+<p>9.4 정지 후: 다툼이 없고 최소 지급액에 도달한 수익은 제7조에 따라 지급합니다. 침해나 부정행위와 관련된 수익은 지급하지 않습니다. 귀하의 작품은 플랫폼에서 삭제됩니다.</p>
+<h2>10. 계약 변경과 탈퇴</h2>
+<p>10.1 회사는 수익 규칙과 검사 기준을 포함해 본 계약을 개정할 수 있습니다. 배분 비율, 최소 지급액, 유효 재생 기준의 변경은 최소 30일 전에, 그 밖의 변경은 최소 7일 전에 알립니다. 변경 시행 후에도 계속 업로드하거나 작품을 게시 상태로 두면 변경에 동의한 것으로 봅니다.</p>
+<p>10.2 귀하는 언제든 모든 작품을 내리고 크리에이터 프로그램에서 탈퇴할 수 있습니다. 정산 완료분과 대기 중인 수익은 제7조에 따라 처리합니다.</p>
+<h2>11. 기타</h2>
+<p>11.1 본 계약과 이용약관이 충돌하면 크리에이터 관련 사항에 대해서는 본 계약이 우선합니다.</p>
+<p>11.2 준거법과 분쟁 해결은 이용약관을 따릅니다.</p>
+<h2>12. 문의</h2>
+<p>크리에이터 관련 문의: creator@cardj.app</p></section>
+<section data-lang="vi" hidden><blockquote><strong>Lưu ý: Tài liệu này do đội sản phẩm soạn thảo, không phải ý kiến pháp lý của luật sư và cần được luật sư rà soát trước khi phát hành.</strong></blockquote>
+<h1>Thỏa thuận nhà sáng tạo CarDJ</h1>
+<p>Phiên bản 1.0 · Bản nháp ngày 09-10-2026</p>
+<p>Thỏa thuận này giữa bạn ("Nhà sáng tạo") và đơn vị vận hành CarDJ ("Nền tảng", "chúng tôi") quy định việc tải lên, cấp phép và chia sẻ doanh thu, đồng thời bổ sung cho Điều khoản sử dụng. Hoàn tất đăng ký nhà sáng tạo đồng nghĩa với việc bạn chấp nhận Thỏa thuận này; Nền tảng sẽ lưu lại phiên bản mà bạn đã chấp nhận.</p>
+<h2>1. Định nghĩa</h2>
+<ul>
+<li><strong>Bản nhạc</strong>: tệp âm thanh bạn tải lên CarDJ (DJ mix, megamix, nhạc điện tử tự sáng tác...) cùng tiêu đề và ảnh bìa.</li>
+<li><strong>Lượt nghe hợp lệ</strong>: người nghe đã đăng nhập nghe một bản nhạc tổng cộng từ 30 giây trở lên. Cùng một người nghe cùng một bản nhạc trong 24 giờ chỉ được tính tối đa 1 lượt.</li>
+<li><strong>Lượt nghe có trọng số</strong>: lượt nghe hợp lệ × hệ số chất lượng. Bản nhạc HQ có hệ số 1.0, bản nhạc SQ có hệ số 0.7.</li>
+<li><strong>Quỹ doanh thu tháng</strong>: doanh thu quảng cáo và doanh thu gói hội viên mà Nền tảng thực nhận trong tháng, sau khi trừ phí của Google Play, mạng quảng cáo và các bên thứ ba khác. Tiền ủng hộ không nằm trong quỹ.</li>
+<li><strong>Kỳ thanh toán</strong>: một tháng dương lịch, tính theo giờ UTC.</li>
+</ul>
+<h2>2. Điều kiện tham gia</h2>
+<p>2.1 Bạn phải từ 18 tuổi trở lên và có đầy đủ năng lực hành vi dân sự.</p>
+<p>2.2 Khi đăng ký, bạn cung cấp tên hiển thị, phương thức nhận tiền (PayPal hoặc Payoneer) và tài khoản nhận tiền tương ứng. Tài khoản nhận tiền phải đứng tên bạn.</p>
+<p>2.3 Nền tảng có thể từ chối đơn đăng ký hoặc thu hồi tư cách nhà sáng tạo vì lý do chất lượng nội dung, lịch sử tuân thủ hoặc lý do hợp lý khác.</p>
+<p>2.4 Bạn và Nền tảng là hai bên hợp tác độc lập; Thỏa thuận này không tạo ra quan hệ lao động, hợp danh hay đại lý.</p>
+<h2>3. Yêu cầu đối với bản nhạc và kiểm tra chất lượng âm thanh</h2>
+<p>3.1 <strong>Yêu cầu tệp</strong>: WAV, FLAC, MP3 (≥ 320 kbps) hoặc AAC (≥ 256 kbps); tần số lấy mẫu ≥ 44,1 kHz; stereo; thời lượng ≥ 60 giây; mỗi tệp ≤ 500 MB.</p>
+<p>3.2 <strong>Kiểm tra tự động</strong>. Mọi bản nhạc sau khi tải lên đều được kiểm tra chất lượng âm thanh tự động theo các tiêu chí sau:</p>
+<table><thead><tr><th>Hạng mục</th><th>Đạt</th><th>Cảnh báo</th><th>Không đạt</th></tr></thead><tbody>
+<tr><td>Định dạng và bitrate</td><td>Lossless / 320 kbps</td><td>256 kbps</td><td>&lt; 256 kbps, từ chối</td></tr>
+<tr><td>Tính xác thực phổ tần</td><td>Tỷ lệ năng lượng trên 16 kHz đạt ngưỡng và tần số cắt ≥ 19 kHz</td><td>Tần số cắt 17–19 kHz</td><td>Tần số cắt ≤ 16,5 kHz, coi là bitrate cao giả</td></tr>
+<tr><td>Độ lớn âm thanh</td><td>-7 đến -12 LUFS, true peak ≤ -0,5 dBTP</td><td>Ngoài khoảng</td><td>True peak &gt; 0 dBTP, hoặc đoạn bị cắt xén &gt; 1%</td></tr>
+<tr><td>Dải động</td><td>DR ≥ 7</td><td>DR 5–6</td><td>DR &lt; 5</td></tr>
+<tr><td>Kiểm tra trùng lặp</td><td>Độ tương đồng dấu vân tay &lt; 70%</td><td>70–90%, chuyển duyệt thủ công</td><td>&gt; 90%, từ chối và ghi nhận cho người tải lên đầu tiên</td></tr>
+</tbody></table>
+<p>3.3 <strong>Xếp hạng</strong>. Điểm tổng 0–100:</p>
+<ul>
+<li><strong>Từ 80 trở lên: HQ</strong> (chứng nhận chất lượng cao). Được đề xuất trên trang chủ, hệ số doanh thu 1.0.</li>
+<li><strong>50–79: SQ</strong> (chất lượng tiêu chuẩn). Chỉ hiển thị trên trang nhà sáng tạo, hệ số doanh thu 0.7.</li>
+<li><strong>Dưới 50: từ chối.</strong> Không được đăng, không tính doanh thu.</li>
+</ul>
+<p>3.4 Kết quả kiểm tra được hiển thị dưới dạng báo cáo trong mục "Bản nhạc của tôi". Bản nhạc bị từ chối hoặc xếp hạng SQ có thể được chỉnh sửa và tải lên lại. Nền tảng có thể cải tiến thuật toán kiểm tra theo tiến bộ công nghệ; thay đổi ngưỡng xếp hạng sẽ được thông báo trước.</p>
+<h2>4. Cấp phép</h2>
+<p>4.1 Bạn giữ toàn bộ bản quyền đối với bản nhạc của mình.</p>
+<p>4.2 Bạn cấp cho Nền tảng giấy phép <strong>không độc quyền, toàn cầu, miễn phí bản quyền, có thể cấp lại cho nhà cung cấp dịch vụ của Nền tảng</strong> để: lưu trữ, chuyển mã, phát trực tuyến; cung cấp bộ nhớ ngoại tuyến cho hội viên; đề xuất và hiển thị trong Nền tảng; và sử dụng đoạn trích không quá 60 giây để quảng bá Nền tảng (kể cả trên mạng xã hội và cửa hàng ứng dụng).</p>
+<p>4.3 Giấy phép có hiệu lực trong thời gian bản nhạc được đăng. Khi bản nhạc bị gỡ, giấy phép chấm dứt, ngoại trừ: bản sao đã lưu trên thiết bị hội viên vẫn tồn tại đến khi bộ nhớ đệm hết hạn; bản sao mà pháp luật yêu cầu lưu giữ; tài liệu quảng bá đã sản xuất có thể dùng tiếp tối đa 90 ngày.</p>
+<p>4.4 Nền tảng không cấp phép bản nhạc của bạn cho bên thứ ba sử dụng thương mại, cũng không bán riêng bản nhạc của bạn.</p>
+<h2>5. Bảo đảm bản quyền và bồi thường</h2>
+<p>5.1 Bạn bảo đảm và cam kết rằng:</p>
+<ul>
+<li>bạn sở hữu toàn bộ quyền đối với bản nhạc hoặc đã được cấp mọi giấy phép cần thiết, bao gồm cho sample, nhạc nền, giọng hát và ảnh bìa;</li>
+<li>bản nhạc không xâm phạm bản quyền, nhãn hiệu, quyền hình ảnh hay quyền nào khác của bên thứ ba;</li>
+<li>bản nhạc không chứa nội dung vi phạm pháp luật và tuân thủ Quy tắc cộng đồng;</li>
+<li>thông tin danh tính và nhận tiền bạn cung cấp là đúng sự thật và chính xác.</li>
+</ul>
+<p>5.2 Nền tảng không xin giấy phép từ bên thứ ba thay cho bạn.</p>
+<p>5.3 <strong>Bồi thường.</strong> Nếu việc bạn vi phạm các bảo đảm trên khiến Nền tảng bị bên thứ ba khiếu nại, kiện tụng, chịu tổn thất hoặc chi phí (gồm phí luật sư hợp lý), bạn có trách nhiệm bảo vệ Nền tảng và bồi thường toàn bộ. Nền tảng có quyền giữ lại hoặc khấu trừ số tiền tương ứng từ doanh thu chưa thanh toán của bạn.</p>
+<p>5.4 Khi nhận được khiếu nại xâm phạm, Nền tảng có thể gỡ ngay bản nhạc liên quan mà không cần bạn đồng ý trước. Bạn có thể gửi phản hồi theo Quy trình thông báo DMCA và phản hồi.</p>
+<h2>6. Chia sẻ doanh thu</h2>
+<p>6.1 <strong>Tỷ lệ chia sẻ</strong>: Nền tảng phân phối <strong>65%</strong> quỹ doanh thu tháng cho toàn bộ nhà sáng tạo, theo tỷ lệ lượt nghe có trọng số của từng người trên tổng lượt nghe có trọng số toàn nền tảng.</p>
+<blockquote>Doanh thu tháng của nhà sáng tạo = quỹ doanh thu tháng × 65% × (lượt nghe có trọng số của nhà sáng tạo trong tháng ÷ tổng lượt nghe có trọng số toàn nền tảng trong tháng)</blockquote>
+<p>6.2 <strong>Ủng hộ</strong>: khi người nghe ủng hộ bản nhạc của bạn qua Google Play, 65% số tiền thực nhận sau phí Google Play thuộc về bạn trực tiếp, không đưa vào quỹ.</p>
+<p>6.3 <strong>Cách tính</strong>: chỉ tính lượt nghe hợp lệ theo định nghĩa tại Mục 1. Lượt nghe của người chưa đăng nhập chỉ được ghi nhận sự kiện, không tính doanh thu.</p>
+<p>6.4 <strong>Lượt nghe bất thường</strong>: với lượt nghe tạo ra bởi bot, script, giả lập, nhóm "cày view" hoặc lượt nghe mà Nền tảng có cơ sở hợp lý để coi là bất thường, Nền tảng có quyền không tính và có thể khấu trừ hồi tố.</p>
+<p>6.5 <strong>Không bảo đảm thu nhập.</strong> Giá trị của một lượt nghe hợp lệ thay đổi theo quỹ doanh thu tháng và tổng lượt nghe toàn nền tảng. Nền tảng không bảo đảm bất kỳ mức thu nhập tối thiểu, đơn giá hay mức tăng trưởng nào. "Ước tính tháng này" chỉ mang tính tham khảo; kết quả thanh toán hàng tháng là số liệu cuối cùng.</p>
+<h2>7. Thanh toán và rút tiền</h2>
+<p>7.1 <strong>Thanh toán hàng tháng</strong>: ngày 1 hằng tháng (UTC), Nền tảng đối soát tháng trước và tạo bản ghi Payout gồm doanh thu gộp, phần chia sẻ, số dư chuyển từ tháng trước, số tiền phải trả kỳ này và trạng thái.</p>
+<p>7.2 <strong>Ngưỡng thanh toán</strong>: chỉ thanh toán khi số tiền phải trả trong kỳ <strong>từ 20 USD trở lên</strong>. Dưới 20 USD sẽ tự động chuyển sang tháng sau và tích lũy.</p>
+<p>7.3 <strong>Phương thức thanh toán</strong>: qua PayPal Payouts hoặc Payoneer Mass Payout, bằng đô la Mỹ. Phí và chi phí chuyển đổi tiền tệ do PayPal, Payoneer hoặc ngân hàng của bạn thu sẽ do bạn chịu.</p>
+<p>7.4 <strong>Tài khoản nhận tiền</strong>: phải liên kết tài khoản nhận tiền hợp lệ trước kỳ thanh toán. Nếu chưa liên kết hoặc tài khoản không hợp lệ, Payout sẽ ở trạng thái "tạm giữ" tối đa 12 tháng; quá thời hạn mà vẫn chưa liên kết, Nền tảng có thể coi như bạn từ bỏ khoản tiền đó.</p>
+<p>7.5 <strong>Tạm giữ và thu hồi</strong>: nếu phát hiện cày lượt nghe, khiếu nại xâm phạm hoặc vi phạm khác, Nền tảng có thể đặt Payout liên quan ở trạng thái "tạm giữ" và sau khi điều tra sẽ trả đủ, trả một phần hoặc hủy. Khoản đã trả mà sau đó xác định là thu được từ vi phạm, Nền tảng có quyền yêu cầu hoàn lại hoặc khấu trừ vào doanh thu sau.</p>
+<p>7.6 <strong>Thuế</strong>: bạn tự kê khai và nộp thuế tại nơi cư trú. Nền tảng có thể yêu cầu thông tin thuế hoặc khấu trừ tại nguồn theo quy định pháp luật.</p>
+<p>7.7 <strong>Khiếu nại</strong>: nếu không đồng ý với số tiền Payout, vui lòng gửi email đến creator@cardj.app trong vòng 30 ngày kể từ khi nhận thông báo Payout; quá hạn được coi là đã xác nhận.</p>
+<p>7.8 Trong giai đoạn đầu ra mắt, tính năng thanh toán có thể được mở theo từng giai đoạn. Payout tạo ra trước khi mở thanh toán sẽ được lưu giữ và trả theo Thỏa thuận này khi tính năng được mở.</p>
+<h2>8. Hành vi bị cấm</h2>
+<p>Bạn không được:</p>
+<ul>
+<li>thổi phồng lượt nghe, lượt yêu thích hoặc thứ hạng bằng bất kỳ cách nào;</li>
+<li>tải lên tệp bitrate cao giả (âm thanh bitrate thấp đóng gói lại thành lossless hoặc 320 kbps);</li>
+<li>tải lên lặp lại cùng một bản nhạc hoặc tải lên bản nhạc của người khác;</li>
+<li>dẫn người nghe thanh toán qua kênh ngoài Google Play trong bản nhạc, tiêu đề, ảnh bìa hoặc mô tả;</li>
+<li>vi phạm Điều khoản sử dụng hoặc Quy tắc cộng đồng.</li>
+</ul>
+<h2>9. Gỡ bỏ và khóa tài khoản</h2>
+<p>9.1 <strong>Bạn có thể</strong> gỡ bản nhạc của mình bất cứ lúc nào trong mục "Bản nhạc của tôi".</p>
+<p>9.2 <strong>Nền tảng có thể</strong> gỡ bản nhạc khi: nhận được khiếu nại xâm phạm; vi phạm Quy tắc cộng đồng; kiểm tra chất lượng phát hiện bitrate cao giả; kiểm tra trùng lặp xác định là trùng; hoặc vì lý do hợp lý khác.</p>
+<p>9.3 <strong>Khóa tài khoản.</strong> Nền tảng có thể chấm dứt tư cách nhà sáng tạo và khóa tài khoản nếu:</p>
+<ul>
+<li>trong 12 tháng bạn nhận 3 khiếu nại xâm phạm hợp lệ mà không có phản hồi nào thành công;</li>
+<li>cày lượt nghe hoặc gian lận nghiêm trọng khác;</li>
+<li>vi phạm nghiêm trọng hoặc nhiều lần Thỏa thuận này.</li>
+</ul>
+<p>9.4 Sau khi khóa: doanh thu không có tranh chấp và đã đạt ngưỡng thanh toán sẽ được trả theo Mục 7; doanh thu liên quan đến xâm phạm hoặc gian lận không được trả; bản nhạc của bạn bị gỡ khỏi Nền tảng.</p>
+<h2>10. Thay đổi và rút khỏi chương trình</h2>
+<p>10.1 Nền tảng có thể cập nhật Thỏa thuận này, kể cả quy tắc chia sẻ doanh thu và tiêu chí kiểm tra. Thay đổi về tỷ lệ chia sẻ, ngưỡng thanh toán hoặc cách tính lượt nghe hợp lệ được thông báo trước ít nhất 30 ngày; thay đổi khác ít nhất 7 ngày. Tiếp tục tải lên hoặc giữ bản nhạc đã đăng sau khi thay đổi có hiệu lực đồng nghĩa với việc bạn chấp nhận.</p>
+<p>10.2 Bạn có thể gỡ toàn bộ bản nhạc và rút khỏi chương trình nhà sáng tạo bất cứ lúc nào; doanh thu đã đối soát hoặc đang chờ sẽ xử lý theo Mục 7.</p>
+<h2>11. Điều khoản khác</h2>
+<p>11.1 Nếu Thỏa thuận này mâu thuẫn với Điều khoản sử dụng về các vấn đề của nhà sáng tạo, Thỏa thuận này được ưu tiên áp dụng.</p>
+<p>11.2 Luật áp dụng và giải quyết tranh chấp theo Điều khoản sử dụng.</p>
+<h2>12. Liên hệ</h2>
+<p>Vấn đề nhà sáng tạo: creator@cardj.app</p></section>
+<div class="nav"><a href="index.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="creator-agreement.html">Creator Agreement</a> · <a href="dmca.html">DMCA</a> · <a href="community.html">Community</a> · <a href="delete-account.html">Delete account</a><br>LT Tech (라이트테크) · fkdlxmxpzm@gmail.com</div>
+</main>
+<script>
+(function(){
+  var tabs=document.querySelectorAll('.lang a'),secs=document.querySelectorAll('section[data-lang]');
+  function show(l){
+    secs.forEach(function(s){s.hidden=s.dataset.lang!==l});
+    tabs.forEach(function(t){t.classList.toggle('on',t.dataset.lang===l)});
+    document.documentElement.lang=l;
+  }
+  var h=location.hash.replace('#','');var ok=['zh','en','ko','vi'];
+  var nav=(navigator.language||'en').slice(0,2);
+  show(ok.indexOf(h)>=0?h:(ok.indexOf(nav)>=0?nav:'en'));
+  tabs.forEach(function(t){t.addEventListener('click',function(e){e.preventDefault();history.replaceState(null,'','#'+t.dataset.lang);show(t.dataset.lang)})});
+})();
+</script>
+</body>
+</html>
